@@ -41,6 +41,16 @@ public class Course {
     }
     
     public static void main(String[] args) {
+        Course c1 = new Course();
+        c1.setId(1);
+        c1.setName("Data Structures");
+        c1.setCode(135);
         
+        System.out.println("Course 1 \nCourse ID: " + c1.getId() + "\nCourse Name: " + c1.getName() + "\nCourse Code: " + c1.getCode());
+        
+        System.out.println("");
+        
+        Course c2 = new Course(2, "Algorithms", 123);
+        System.out.println("Course 2 \nCourse ID: " + c2.getId() + "\nCourse Name: " + c2.getName() + "\nCourse Code: " + c2.getCode());
     }
 }
